@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import SvgIcon from "../../common/SvgIcon";
 import Button from "../../common/Button";
+import LOGO from "../../../../assests/svg/logo.svg";
 
 import * as S from "./styles";
 
@@ -27,16 +28,16 @@ const Header = () => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t("About")}</Link>
+          <Link to="/dh">{t("About")}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t("Mission")}</Link>
+          <Link to="/dh">{t("Mission")}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t("Product")}</Link>
+          <Link to="/dh">{t("Product")}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall style={{ width: "180px" }}>
-          <Link to="/main/dashboard">
+          <Link to="/dh">
             <Button>{t("Login")}</Button>
           </Link>
         </S.CustomNavLinkSmall>
@@ -50,7 +51,7 @@ const Header = () => {
         <Row type="flex" justify="space-between" gutter={20}>
           <Col>
             <S.LogoContainer to="/">
-              <SvgIcon src="logo.svg" />
+              <SvgIcon src={LOGO} />
             </S.LogoContainer>
           </Col>
           <S.NotHidden>

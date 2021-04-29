@@ -18,6 +18,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Row, Col, Card, Avatar, Image } from "antd";
 import { Fade } from "react-reveal";
 import * as S from "./components/MiddleBlock/styles";
+import HEADERIMAGE from "../../assests/svg/header-image.png";
+import BIOIMAGE from "../../assests/svg/bio-image.png";
+import GALLERY1 from "../../assests/gallery/result2019.jpg";
+import GALLERY2 from "../../assests/gallery/result2019.jpg";
+import GALLERY3 from "../../assests/gallery/result2019.jpg";
+import TIMETABLEIMAGE from "../../assests/svg/timetable.jpg";
+import REVIEW1 from "../../assests/gallery/review01.jpg";
+import REVIEW2 from "../../assests/gallery/review02.jpg";
+// import REVIEW3 from "../../assests/gallery/review01.jpg";
+import REVIEWDP1 from "../../assests/gallery/reviewdp01.png";
+import REVIEWDP2 from "../../assests/gallery/reviewdp02.png";
+
+import VENUEIMAGE from "../../assests/svg/samadhee.jpg";
 
 const { Meta } = Card;
 const useStyles = makeStyles((theme) => ({
@@ -62,7 +75,7 @@ export default function Home(props) {
           title={Introduction.title}
           content={Introduction.text}
           button={Introduction.button}
-          icon="header-image.png"
+          icon={HEADERIMAGE}
         />
       </div>
       <Container>
@@ -77,7 +90,7 @@ export default function Home(props) {
           title={SecondBlock.title}
           content={SecondBlock.text}
           section={SecondBlock.section}
-          icon="bio-image.png"
+          icon={BIOIMAGE}
         />
         <Row
           type="flex"
@@ -91,36 +104,21 @@ export default function Home(props) {
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={
-                  <Image alt="example" src={`/img/gallery/result2019.jpg`} />
-                }
-              >
+              <Card hoverable cover={<Image alt="example" src={GALLERY1} />}>
                 <Meta title="Year 2017" description="GCE Advanced level" />
               </Card>
             </Fade>
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={
-                  <Image alt="example" src={`/img/gallery/result2019.jpg`} />
-                }
-              >
+              <Card hoverable cover={<Image alt="example" src={GALLERY2} />}>
                 <Meta title="Year 2018" description="GCE Advanced level" />
               </Card>
             </Fade>
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={
-                  <Image alt="example" src={`/img/gallery/result2019.jpg`} />
-                }
-              >
+              <Card hoverable cover={<Image alt="example" src={GALLERY3} />}>
                 <Meta title="Year 2019" description="GCE Advanced level" />
               </Card>
             </Fade>
@@ -131,7 +129,7 @@ export default function Home(props) {
           first="true"
           title={ThirdBlock.title}
           content={ThirdBlock.text}
-          icon="timetable.jpg"
+          icon={TIMETABLEIMAGE}
         />
         <br />
         <br />
@@ -152,14 +150,9 @@ export default function Home(props) {
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={<img alt="example" src={`/img/gallery/review01.jpg`} />}
-              >
+              <Card hoverable cover={<img alt="example" src={REVIEW1} />}>
                 <Meta
-                  avatar={
-                    <Avatar size="large" src={`/img/gallery/reviewdp01.png`} />
-                  }
+                  avatar={<Avatar size="large" src={REVIEWDP1} />}
                   title="තෙපුලි උමේෂා - Island Frist"
                   description="2015 A/L - Rathnawali Balika Vidyalaya"
                 />
@@ -168,14 +161,9 @@ export default function Home(props) {
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={<img alt="example" src={`/img/gallery/review02.jpg`} />}
-              >
+              <Card hoverable cover={<img alt="example" src={REVIEW2} />}>
                 <Meta
-                  avatar={
-                    <Avatar size="large" src={`/img/gallery/reviewdp02.png`} />
-                  }
+                  avatar={<Avatar size="large" src={REVIEWDP2} />}
                   title="කළණි සමුද්‍රා රාජපක්ෂ - Island Frist"
                   description="2018 A/L - Rathnawali Balika Vidyalaya"
                 />
@@ -184,14 +172,9 @@ export default function Home(props) {
           </Col>
           <Col className={classes.card} xs={24} xl={8}>
             <Fade bottom>
-              <Card
-                hoverable
-                cover={<img alt="example" src={`/img/gallery/review01.jpg`} />}
-              >
+              <Card hoverable cover={<img alt="example" src={REVIEW1} />}>
                 <Meta
-                  avatar={
-                    <Avatar size="large" src={`/img/gallery/reviewdp01.png`} />
-                  }
+                  avatar={<Avatar size="large" src={REVIEWDP1} />}
                   title="තෙපුලි උමේෂා - Island Frist"
                   description="2018 A/L - Rathnawali Balika Vidyalaya"
                 />
@@ -205,7 +188,7 @@ export default function Home(props) {
           first="true"
           title={FourthBlock.title}
           content={FourthBlock.text}
-          icon="samadhee.jpg"
+          icon={VENUEIMAGE}
         />
         <ContactFrom title={ContactBlock.title} content={ContactBlock.text} />
       </Container>

@@ -6,7 +6,7 @@ import { Image } from "antd";
 const SvgIcon = (props) => (
   <Image
     style={{ width: props.first ? "100%" : "", height: "auto" }}
-    src={`/img/svg/${props.src}`}
+    src={props.src}
   />
 );
 

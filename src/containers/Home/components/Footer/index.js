@@ -6,7 +6,12 @@ import { Fade } from "react-reveal";
 
 import Container from "../../common/Container";
 import SvgIcon from "../../common/SvgIcon";
-
+import LOGO from "../../../../assests/svg/logo.svg";
+import GITLOGO from "../../../../assests/svg/github.svg";
+import TWITTERLOGO from "../../../../assests/svg/twitter.svg";
+import LINKEDINLOGO from "../../../../assests/svg/linkedin.svg";
+import INSTALOGO from "../../../../assests/svg/instagram.svg";
+import MEDIUMLOGO from "../../../../assests/svg/medium.svg";
 import * as S from "./styles";
 
 const Footer = () => {
@@ -102,44 +107,44 @@ const Footer = () => {
             >
               <S.NavLink to="/">
                 <S.LogoContainer>
-                  <SvgIcon src="logo.svg" />
+                  <SvgIcon src={LOGO} />
                 </S.LogoContainer>
               </S.NavLink>
               <S.FooterContainer>
                 <a
-                  href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                  target="_blank"
+                  href="/dh"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SvgIcon src="github.svg" />
+                  <SvgIcon src={GITLOGO} />
                 </a>
                 <a
-                  href="https://twitter.com/Adrinlolx"
-                  target="_blank"
+                  href="/dh"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SvgIcon src="twitter.svg" />
+                  <SvgIcon src={TWITTERLOGO} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/lasha-kakabadze//"
+                  href="https://www.linkedin.com/company/dhahas-technologies"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SvgIcon src="linkedin.svg" />
+                  <SvgIcon src={LINKEDINLOGO} />
                 </a>
                 <a
-                  href="https://github.com/Adrinlol/"
-                  target="_blank"
+                  href="/dh"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SvgIcon src="instagram.svg" />
+                  <SvgIcon src={INSTALOGO} />
                 </a>
                 <a
-                  href="https://medium.com/@lashakakabadze/"
-                  target="_blank"
+                  href="/dh"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SvgIcon src="medium.svg" />
+                  <SvgIcon src={MEDIUMLOGO} />
                 </a>
               </S.FooterContainer>
             </Row>
